@@ -6,3 +6,6 @@ from mpl_toolkits.mplot3d import Axes3D
 # Cargar la estructura de la proteína desde un archivo PDB
 parser = PDBParser()
 structure = parser.get_structure('mi_proteina', 'C:\\DATABASE\\Universidad Comunera\\Programación 2\\Programación\\messi\\8f48.pdb')
+
+# Crear una lista para almacenar las coordenadas de los átomos
+atom_coords = []
