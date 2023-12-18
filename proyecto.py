@@ -16,3 +16,24 @@ class Estructura:
 
     def cargar_estructura(self):
         self.structure = self.parser.parsear(self.archivo_pdb)
+
+class Parser:
+    def __init__(self):
+        pass
+
+    def parsear(self, archivo_pdb):
+        parser = PDBParser()
+        return parser.get_structure('mi_proteina', archivo_pdb)
+
+class Coordenadas:
+    def __init__(self, structure):
+        self.structure = structure
+        self.atom_coords = []
+
+    def obtener_coordenadas(self):
+        for model in self.structure:
+            for chain in model:
+                for residue in chain:
+                    for atom in residue:
+                        self.atom_coords.append(atom.get_coord())
+        self.atom_coords = np.array(self.atom_coords)
