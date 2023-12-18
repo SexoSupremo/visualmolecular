@@ -62,3 +62,9 @@ coordenadas = Coordenadas(proteina.estructura.structure)
 
 # Obtener las coordenadas de los átomos
 coordenadas.obtener_coordenadas()
+
+# Crear una instancia de la clase Visualizador
+visualizador = Visualizador(coordenadas.atom_coords)
+
+# Dibujar la proteína
+visualizador.dibujar()
