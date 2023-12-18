@@ -17,3 +17,6 @@ for model in structure:
             for atom in residue:
                 # Añadir las coordenadas del átomo a la lista
                 atom_coords.append(atom.get_coord())
+
+# Convertir la lista de coordenadas a un array de NumPy
+atom_coords = np.array(atom_coords)
