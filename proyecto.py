@@ -15,4 +15,5 @@ for model in structure:
     for chain in model:
         for residue in chain:
             for atom in residue:
-                
+                # Añadir las coordenadas del átomo a la lista
+                atom_coords.append(atom.get_coord())
