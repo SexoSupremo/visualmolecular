@@ -52,7 +52,7 @@ class Visualizador:
         plt.show()
 
 # Crear una instancia de la clase Proteina
-proteina = Proteina('C:\\DATABASE\\Universidad Comunera\\Programación 2\\Programación\\messi\\8f48.pdb')
+proteina = Proteina('C:\\DATABASE\\Universidad Comunera\\Programación 2\\Programación\Github\\visualmolecular\\visualmolecular\\8f48.pdb')
 
 # Cargar la estructura de la proteína
 proteina.estructura.cargar_estructura()
@@ -68,3 +68,8 @@ visualizador = Visualizador(coordenadas.atom_coords)
 
 # Dibujar la proteína
 visualizador.dibujar()
+
+#Observcacion: PDBConstructionWarning: WARNING: Chain A is discontinuous at line 5956: 
+# Esta advertencia se produce cuando la biblioteca Bio.PDB encuentra una discontinuidad en la cadena de la proteína45. 
+# Esto es bastante común ya que muchos archivos PDB contienen errores o discontinuidades5. 
+# En este caso, se ha ignorado el problema para facilitar la visualización.</s>
