@@ -70,6 +70,6 @@ visualizador = Visualizador(coordenadas.atom_coords)
 visualizador.dibujar()
 
 #Observcacion: PDBConstructionWarning: WARNING: Chain A is discontinuous at line 5956: 
-# Esta advertencia se produce cuando la biblioteca Bio.PDB encuentra una discontinuidad en la cadena de la proteína45. 
-# Esto es bastante común ya que muchos archivos PDB contienen errores o discontinuidades5. 
+# Esta advertencia se produce cuando la biblioteca Bio.PDB encuentra una discontinuidad en la cadena de la proteína. 
+# Esto es bastante común ya que muchos archivos PDB contienen errores o discontinuidades. 
 # En este caso, se ha ignorado el problema para facilitar la visualización.</s>
