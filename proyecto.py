@@ -37,3 +37,28 @@ class Coordenadas:
                     for atom in residue:
                         self.atom_coords.append(atom.get_coord())
         self.atom_coords = np.array(self.atom_coords)
+        
+class Visualizador:
+    def __init__(self, atom_coords):
+        self.atom_coords = atom_coords
+
+    def dibujar(self):
+        fig = plt.figure()
+        ax = fig.add_subplot(111, projection='3d')
+        x = self.atom_coords[:,0]
+        y = self.atom_coords[:,1]
+        z = self.atom_coords[:,2]
+        ax.scatter(x, y, z)
+        plt.show()
+
+# Crear una instancia de la clase Proteina
+proteina = Proteina('C:\\DATABASE\\Universidad Comunera\\Programación 2\\Programación\\messi\\8f48.pdb')
+
+# Cargar la estructura de la proteína
+proteina.estructura.cargar_estructura()
+
+# Crear una instancia de la clase Coordenadas
+coordenadas = Coordenadas(proteina.estructura.structure)
+
+# Obtener las coordenadas de los átomos
+coordenadas.obtener_coordenadas()
