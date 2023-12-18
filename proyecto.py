@@ -24,3 +24,8 @@ atom_coords = np.array(atom_coords)
 # Crear una figura 3D
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
+
+# Extraer las coordenadas x, y, z
+x = atom_coords[:,0]
+y = atom_coords[:,1]
+z = atom_coords[:,2]
