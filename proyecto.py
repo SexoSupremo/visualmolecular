@@ -29,3 +29,6 @@ ax = fig.add_subplot(111, projection='3d')
 x = atom_coords[:,0]
 y = atom_coords[:,1]
 z = atom_coords[:,2]
+
+# Dibujar los átomos como puntos en el espacio 3D
+ax.scatter(x, y, z)
