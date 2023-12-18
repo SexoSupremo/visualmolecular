@@ -32,3 +32,6 @@ z = atom_coords[:,2]
 
 # Dibujar los átomos como puntos en el espacio 3D
 ax.scatter(x, y, z)
+
+# Mostrar la figura
+plt.show()
