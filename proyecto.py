@@ -20,3 +20,7 @@ for model in structure:
 
 # Convertir la lista de coordenadas a un array de NumPy
 atom_coords = np.array(atom_coords)
+
+# Crear una figura 3D
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
