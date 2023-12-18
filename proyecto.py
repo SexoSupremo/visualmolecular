@@ -9,3 +9,10 @@ structure = parser.get_structure('mi_proteina', 'C:\\DATABASE\\Universidad Comun
 
 # Crear una lista para almacenar las coordenadas de los átomos
 atom_coords = []
+
+# Iterar sobre todos los átomos en la estructura
+for model in structure:
+    for chain in model:
+        for residue in chain:
+            for atom in residue:
+                
